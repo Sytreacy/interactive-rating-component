@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'overpass hsl(variable';
+  src: url(fonts/Overpass-VariableFont_wght.ttf);
+  font-weight: 400, 700;
+}
+
+:root {
+  --orange: 25, 97%, 53%;
+  --white: 0, 0%, 100%;
+  --light-grey: 217, 12%, 63%;
+  --medium-grey: 216, 12%, 54%;
+  --dark-blue: 213, 19%, 18%;
+  --very-dark-blue: 216, 12%, 8%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'overpass variable', sans-serif;
+}
+
+body {
+  background-color: hsl(var(--very-dark-blue));
+}
+
+.d-flex {
+  display: flex;
+}
+
+main {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 350px;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 2em;
+  gap: 1.5em;
+  background-color: hsl(var(--dark-blue));
+}
+
+.container p {
+  color: hsl(var(--light-grey));
+}
+
+.star-icon {
+  width: fit-content;
+  padding: 0.75em;
+  border-radius: 2em;
+  background-color: hsla(var(--medium-grey), 0.1);
+}
+
+h1 {
+  color: hsl(var(--white));
+  font-weight: 400;
+  font-size: 1.55rem;
+}
+
+.para {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.rating-container {
+  justify-content: space-between;
+}
+
+.rating {
+  padding: 0.75em 1em;
+  border-radius: 2em;
+  background-color: hsla(var(--medium-grey), 0.1);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: hsl(var(--orange));
+  color: hsl(var(--white));
+
+}
+
+button {
+  background-color: hsl(var(--orange));
+  color: hsl(var(--white));
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(var(--white));
+  color: hsl(var(--orange));
+}
+
+.thanks-wrapper {
+  display: none;
+}
+
+.thanks-container {
+  align-items: center;
+}
+
+.container .feedback {
+  background-color: hsla(var(--medium-grey), 0.1);
+  color: hsl(var(--orange));
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
+
+.thanks-container p {
+  text-align: center;
+}
+
+.thanks-icon {
+  width: fit-content;
+}
+
+@media all and (min-width: 1000px) {
+  .container {
+    max-width: 400px;
+    border-radius: 2em;
+  }
+
+  .rating {
+    padding: 1em 1.25em;
+  }
+}

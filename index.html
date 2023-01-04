@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <main class="d-flex">
+    <div class="container d-flex">
+      <img class="star-icon" src="images/icon-star.svg" alt="star icon">
+      <h1>How did we do?</h1>
+      <p class="para">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="d-flex rating-container">
+        <p class="rating">1</p>
+        <p class="rating">2</p>
+        <p class="rating">3</p>
+        <p class="rating">4</p>
+        <p class="rating">5</p>
+      </div>
+      <button>Submit</button>
+    </div>
+  </main>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thanks-wrapper">
+    <div class="d-flex container thanks-container">
+      <img class="thanks-icon" src="images/illustration-thank-you.svg" alt="thanks icon">
+      <p class="feedback">You selected <span id="feedback">4</span> out of 5</p>
+
+      <h1>Thank you!</h1>
+
+      <p class="para">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+  </div>
+
+  <!-- Thank you state end -->
+
+</body>
+
+</html>
