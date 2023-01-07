@@ -46,10 +46,6 @@ main {
   background-color: hsl(var(--dark-blue));
 }
 
-.container p {
-  color: hsl(var(--light-grey));
-}
-
 .star-icon {
   width: fit-content;
   padding: 0.75em;
@@ -66,6 +62,7 @@ h1 {
 .para {
   font-size: 14px;
   line-height: 1.5;
+  color: hsl(var(--light-grey));
 }
 
 .rating-container {
@@ -75,7 +72,6 @@ h1 {
 .rating {
   padding: 0.75em 1em;
   border-radius: 2em;
-  background-color: hsla(var(--medium-grey), 0.1);
   font-weight: bold;
   cursor: pointer;
 }
@@ -83,7 +79,16 @@ h1 {
 .rating:hover {
   background-color: hsl(var(--orange));
   color: hsl(var(--white));
+}
 
+.active {
+  background-color: hsl(var(--light-grey));
+  color: hsl(var(--white));
+}
+
+.inactive {
+  background-color: hsla(var(--medium-grey), 0.1);
+  color: hsl(var(--light-grey));
 }
 
 button {
