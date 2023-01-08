@@ -22,14 +22,6 @@ function deactivateAll(ratings) {
   }
 }
 
-function showThanksDiv(number) {
-  let main = document.getElementsByTagName("main")[0];
-  let thanks = document.getElementsByClassName("thanks-wrapper")[0];
-  ratingNo = document.getElementById("feedback");
-  ratingNo.textContent = number;
-  main.innerHTML = thanks.innerHTML;
-}
-
 ratings.forEach((rating) => {
   rating.addEventListener("click", () => {
     deactivateAll(ratings);
@@ -38,5 +30,11 @@ ratings.forEach((rating) => {
   });
 });
 
-let button = document.getElementsByTagName("button")[0];
-// button.addEventListener("click", showThanksDiv(ratingNo));
+let submitBtn = document.getElementsByTagName("button")[0];
+submitBtn.addEventListener("click", () => {
+  let main = document.getElementsByTagName("main")[0];
+  let thanks = document.getElementsByClassName("thanks-wrapper")[0];
+  ratingTag = document.getElementById("feedback");
+  ratingTag.textContent = ratingNo;
+  main.innerHTML = thanks.innerHTML;
+});
